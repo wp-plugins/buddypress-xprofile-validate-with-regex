@@ -30,6 +30,7 @@ You can also configure a message to show when a field data does not validate.
 * Support validating field data while editing profile - currently data is validated only during registering.
 
 = Next version =
+* Added plugin site
 * Change license to GPLv2 or later - interaction of AGPLv3 with other
   licenses is too confusing
 
