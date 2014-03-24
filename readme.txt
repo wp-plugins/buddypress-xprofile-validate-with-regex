@@ -4,8 +4,8 @@ Tags: buddypress, profile, anti-spam
 Requires at least: 3.8
 Tested up to: 3.8
 Stable tag: 0.1.0
-License: AGPLv3 or later
-License URI: http://www.gnu.org/licenses/agpl-3.0.html
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 BuddyPress - Validate XProfile data with PCRE regular expressions.
 
@@ -28,6 +28,10 @@ You can also configure a message to show when a field data does not validate.
 = TODO =
 * Checking for a valid regular expression while saving field.
 * Support validating field data while editing profile - currently data is validated only during registering.
+
+= Next version =
+* Change license to GPLv2 or later - interaction of AGPLv3 with other
+  licenses is too confusing
 
 = 0.1.0 =
 * Initial release
