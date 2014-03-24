@@ -3,7 +3,7 @@ Contributors: tometzky
 Tags: buddypress, profile, anti-spam
 Requires at least: 3.8
 Tested up to: 3.8
-Stable tag: trunk
+Stable tag: 0.1.0
 License: AGPLv3 or later
 License URI: http://www.gnu.org/licenses/agpl-3.0.html
 
