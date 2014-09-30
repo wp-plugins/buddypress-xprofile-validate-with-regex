@@ -3,8 +3,9 @@
 Plugin Name: BuddyPress XProfile Validate with RegEx
 Plugin URI: http://wordpress.org/plugins/buddypress-xprofile-validate-with-regex/
 Description: BuddyPress - Validate XProfile data with PCRE regular expressions.
-Version: 0.1.1
+Version: 0.1.2
 Author: Tomasz "Tometzky" Ostrowski
+Author URI: https://profiles.wordpress.org/tometzky/
 License: GPLv2 or later
 */
 
