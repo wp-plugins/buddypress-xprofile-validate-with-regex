@@ -47,12 +47,28 @@ add_action('xprofile_field_additional_options','buddypress_xprofile_validate_wit
 
 function buddypress_xprofile_validate_with_regex_save($field)
 {
-	global $meta_keys_descriptions;
+	global $wpdb, $bp, $meta_keys_descriptions;
+	
+	$field_id = $field->id;
+	if ( !isset($field_id) ) {
+		$field_id = $wpdb->insert_id;
+		// There could be another insert after field - a record with type set to 'option'
+		// we need to use its 'parent_id' instead
+		$sql = $wpdb->prepare(
+			"SELECT parent_id from {$bp->profile->table_name_fields} WHERE id = %d",
+			$field_id
+		);
+		$parent_id = $wpdb->get_var($sql);
+		if ( isset($parent_id) ) {
+			$field_id = $parent_id;
+		}
+	}
+	
 	foreach( array_keys($meta_keys_descriptions) as $meta_key ) {
 		if ( isset($_POST["buddypress_xprofile_$meta_key"]) )
 		{
 			bp_xprofile_update_meta(
-				$field->id,
+				$field_id,
 				'field',
 				$meta_key,
 				$_POST["buddypress_xprofile_$meta_key"]
