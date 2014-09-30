@@ -2,8 +2,8 @@
 Contributors: tometzky
 Tags: buddypress, profile, anti-spam
 Requires at least: 3.8
-Tested up to: 3.8
-Stable tag: 0.1.0
+Tested up to: 4.0
+Stable tag: 0.1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -29,7 +29,11 @@ You can also configure a message to show when a field data does not validate.
 * Checking for a valid regular expression while saving field.
 * Support validating field data while editing profile - currently data is validated only during registering.
 
-= Next version =
+= 0.1.2 =
+* Fixed a bug: configuration wasn't saved during creating a new xprofile
+  field - only during editing an existing field
+
+= 0.1.1 =
 * Added plugin site
 * Change license to GPLv2 or later - interaction of AGPLv3 with other
   licenses is too confusing
