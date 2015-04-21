@@ -2,7 +2,7 @@
 Contributors: tometzky
 Tags: buddypress, profile, anti-spam
 Requires at least: 3.8
-Tested up to: 4.0
+Tested up to: 4.2
 Stable tag: 0.1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -26,7 +26,8 @@ You can also configure a message to show when a field data does not validate.
 == Changelog ==
 
 = TODO =
-* Checking for a valid regular expression while saving field.
+* Checking for a valid regular expression while saving field configuration.
+* Support validating standard Name field
 * Support validating field data while editing profile - currently data is validated only during registering.
 
 = 0.1.2 =
